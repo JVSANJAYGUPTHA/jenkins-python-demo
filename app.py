@@ -1,7 +1,7 @@
-def multiply(a, b):
-    return a * b
+def find_min(numbers):
+    if not numbers:
+        raise ValueError("List cannot be empty")
+    return min(numbers)
 
-def divide(a, b):
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
-    return a / b
+def count_odds(numbers):
+    return sum(1 for n in numbers if n % 2 != 0)
